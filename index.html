@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>时间的形状 · 三模型对决</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;background:#141414;color:#eee;padding:16px}
+  h1{font-size:20px;letter-spacing:.2em;text-align:center;margin:8px 0 4px;font-weight:600}
+  p.sub{text-align:center;color:#888;font-size:12px;letter-spacing:.15em;margin-bottom:16px}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  @media(max-width:960px){.grid{grid-template-columns:1fr}}
+  .card{border:1px solid #333;border-radius:8px;overflow:hidden;background:#0d0d0d}
+  .card header{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid #2a2a2a}
+  .card h2{font-size:14px;letter-spacing:.12em;font-weight:600}
+  .card a{color:#7ab0ff;font-size:12px;text-decoration:none}
+  .card a:hover{text-decoration:underline}
+  .card iframe{width:100%;height:72vh;border:0;display:block;background:#F5F1E8}
+  footer{margin-top:16px;text-align:center;color:#666;font-size:12px;line-height:1.9}
+  footer a{color:#7ab0ff;text-decoration:none}
+</style>
+</head>
+<body>
+<h1>时间的形状 · 二十四节气数字长卷</h1>
+<p class="sub">同一道 Fable5 级前端考题 · 三个模型一次成型对决 · 源码见页脚</p>
+<div class="grid">
+  <div class="card">
+    <header><h2>Claude Opus 5 Max</h2><a href="solar-terms-opus5max.html" target="_blank">新窗口全屏打开 ↗</a></header>
+    <iframe src="solar-terms-opus5max.html" loading="lazy" title="Opus 5 Max 版"></iframe>
+  </div>
+  <div class="card">
+    <header><h2>GLM-5.3</h2><a href="solar-terms-glm5-3.html" target="_blank">新窗口全屏打开 ↗</a></header>
+    <iframe src="solar-terms-glm5-3.html" loading="lazy" title="GLM-5.3 版"></iframe>
+  </div>
+  <div class="card">
+    <header><h2>K3</h2><a href="solar-terms-k3.html" target="_blank">新窗口全屏打开 ↗</a></header>
+    <iframe src="solar-terms-k3.html" loading="lazy" title="K3 版"></iframe>
+  </div>
+</div>
+<footer>
+  三个作品均为单文件、零外部依赖（无 CDN / 图片 / 音频 / 字体 / 库），视觉与声音全部程序化生成。<br>
+  源码：
+  <a href="https://gist.github.com/Zaichek/4cc98f613ad466d94d9819ab2b3f4bfc" target="_blank">Opus 5 Max</a> ·
+  <a href="https://gist.github.com/Zaichek/b624ba38165fee1cd95531d302bf3ed2" target="_blank">GLM-5.3</a> ·
+  <a href="https://gist.github.com/Zaichek/98ebac0f3c561b8358c67f5eab0306c6" target="_blank">K3</a> ·
+  <a href="https://github.com/Zaichek/solar-terms-scroll" target="_blank">GitHub 仓库</a>
+</footer>
+</body>
+</html>
