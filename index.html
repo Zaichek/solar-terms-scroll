@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>二十四节气数字长卷 · 三模型对决</title>
+<title>二十四节气数字长卷 · 四模型对决</title>
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
   body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;background:#141414;color:#eee;padding:16px}
   h1{font-size:20px;letter-spacing:.2em;text-align:center;margin:8px 0 4px;font-weight:600}
   p.sub{text-align:center;color:#888;font-size:12px;letter-spacing:.15em;margin-bottom:16px}
-  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-  @media(max-width:960px){.grid{grid-template-columns:1fr}}
+  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}@media(max-width:1280px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:700px){.grid{grid-template-columns:1fr}}
   .card{border:1px solid #333;border-radius:8px;overflow:hidden;background:#0d0d0d}
   .card header{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid #2a2a2a}
   .card h2{font-size:14px;letter-spacing:.12em;font-weight:600}
@@ -36,9 +36,13 @@
     <header><h2>K3</h2><a href="solar-terms-k3.html" target="_blank">新窗口全屏打开 ↗</a></header>
     <iframe src="solar-terms-k3.html" loading="lazy" title="K3 版"></iframe>
   </div>
+  <div class="card">
+    <header><h2>Qwen3.8 Max</h2><a href="solar-terms-qwen3-8max.html" target="_blank">新窗口全屏打开 ↗</a></header>
+    <iframe src="solar-terms-qwen3-8max.html" loading="lazy" title="Qwen3.8 Max 版"></iframe>
+  </div>
 </div>
 <footer>
-  三个作品均为单文件、零外部依赖（无 CDN / 图片 / 音频 / 字体 / 库），视觉与声音全部程序化生成。
+  四个作品均为单文件、零外部依赖（无 CDN / 图片 / 音频 / 字体 / 库），视觉与声音全部程序化生成。
 </footer>
 </body>
 </html>
